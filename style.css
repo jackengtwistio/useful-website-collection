@@ -1,0 +1,139 @@
+
+
+
+nav{
+    background-color: transparent;
+    position: fixed!important;
+    color: white;
+    width: 100vw;
+    z-index: 1;
+    text-shadow: tomato 3px 3px 5px;
+
+}
+.nav-link{
+    color: white;
+    border: white solid 1px;
+}
+ul div a{
+    color:white;
+    background-color: rgba(7, 79, 121, 0.74);
+    border: rgb(5, 5, 97) solid 1px;
+    display:block;
+    margin: 1px;
+    text-shadow: whitesmoke!important;
+}
+
+
+
+.main-bg{
+    background-color: rgb(9, 74, 172);
+    color: white;
+}
+
+
+  .bg-img {
+    /* The image used */
+    background-image: url("pic/ComputerScienceImage.jpg");
+    z-index: -1;
+    height: 60vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+  }
+
+  .responsive-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content2 {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.384); 
+    color: white;
+    width: 100%; 
+    padding: 20px; 
+    text-shadow: whitesmoke 5px 5px 10px;
+  }
+
+.outline{
+    background-color: rgb(71, 70, 3);
+    padding: 15px;
+    box-shadow:20px 20px 10px grey;
+    margin: 10em 5em;
+    border-radius: 20px;
+}
+
+.float-img{
+    float:left;
+    width: 390px;
+    height: 200px;
+    margin: auto -25px;
+}
+.float-img2{
+    float:left;
+    width: 340px;
+    height: 150px;
+}
+
+.youtube{
+    background-color: transparent;
+    min-width: 80vw;
+    padding: 4em;
+    border: rgb(206, 228, 11) solid 2px;
+    position: relative;
+    
+}
+
+.youtube-title{
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    text-shadow: rgb(240, 220, 5) 1px 1px 2px;
+    width: 100%;
+}
+
+.form1{
+    padding:5% 5rem;
+    min-width: 100px;
+    min-height: 300px;
+    max-width: 1000px;
+    background-color: rgb(53, 33, 30);
+    margin: 3% auto;
+    box-shadow:inset tomato 0 0 20px 10px;
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+  .main-svg{
+      width: 10%;
+      
+  }
+
+  .logo{
+    stroke: #6fbc6d;
+    stroke-width: 2;
+    stroke-dasharray: 810;
+    stroke-dashoffset: 810;
+    animation: offset 4s ease-out forwards, fill-it 1s 4s forwards;
+  }
+  @keyframes offset{
+    100%{
+        stroke-dashoffset: 0;
+    }
+  }
+  @keyframes fill-it{
+      100%{
+          fill:rgb(19, 157, 221);
+      }
+  }
+
+  /* ---------------------------------------------------- */
+.highlight{
+    box-shadow: 0px 0px 10px #eed565;
+}
