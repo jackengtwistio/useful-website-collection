@@ -16,43 +16,15 @@
 <body class="main-bg">
   <header>
 <!-- nav-------------------------------------------------------------------------------------------------------------------------- -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <li class="mx-3 nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              CS&IT
-            </li>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a href="https://bento.io/topic/web/tutorials">Bento</a>
-              <a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/">Shayhowe</a>
-              <a href="https://teachyourselfcs.com/#algorithms">Teachyourselfcs</a>
-              <a href="https://app.pluralsight.com/library/courses/css-creating-page-layouts/table-of-contents">Pluralsight</a>
-              <a href="https://fullstackopen.com/en/about">Fullstackopen</a>
-              <a href="https://scrimba.com/learn/frontend#">Scrimba</a>
-              <a href="https://frontendmasters.com/courses/">Frontendmasters</a>
-              <a href="https://cs50.harvard.edu/web/2020/weeks/0/">Harvardweb</a>
-              <a href="https://dash.generalassemb.ly/projects">GA</a>
-              <a href="https://www.sitepoint.com/">Sitepoint</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <li class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              General Resource
-            </li>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a href="https://online-learning.harvard.edu/">Harvard online course</a>
-              <a href="https://www.openculture.com/">Openculture(it collects other webs)</a>
-              <a href="https://www.ted.com/">TED</a>
-              <a href="https://www.edx.org/">EDX</a>
-              <a href="https://www.khanacademy.org/">khanacademy</a>
-              <a href="https://www.udemy.com/">Udemy</a>
-              <a href="https://www.greatlearning.edu.hk/">Great learning</a>
-            </div>
-          </li>
-          <li class="m-1" id="navInstruction">&nbsp; &nbsp; &#8592;Click them for more resources</li>
-        </ul>
-      </div>
+    <nav class="navbars">
+      <select>
+        <option>IT stuff</option>
+        <option v-for="link in ITWebLinks"  v-html="link"></option>
+      </select>
+      <select>
+        <option>general stuff</option>
+        <option v-for="link in generalWebLinks"  v-html="link"></option>
+      </select>
     </nav>
   <!-- /nav---------------------------------------------------------------------------------------------------- -->
 
@@ -181,9 +153,10 @@
     <a href="suggestion.html">go to sug</a>
     <div id="sug"><p></p></div>
   </footer>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="3.2.1.mini.js" type="text/javascript" charset="utf-8"></script>
         <script src="script.js"></script></body>
-
+</body>
 </html>
