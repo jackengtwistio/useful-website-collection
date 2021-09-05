@@ -1,3 +1,6 @@
+body{
+    line-height: 1.6;
+}
 
 
 
@@ -10,20 +13,22 @@ nav{
     text-shadow: tomato 3px 3px 5px;
 
 }
-.nav-link{
+/* .nav-link{
     color: white;
     border: white solid 1px;
-}
-ul div a{
+} */
+/* ul div a{
     color:white;
     background-color: rgba(7, 79, 121, 0.74);
     border: rgb(5, 5, 97) solid 1px;
     display:block;
     margin: 1px;
     text-shadow: whitesmoke!important;
+} */
+
+img{
+    max-width: 90%;
 }
-
-
 
 .main-bg{
     background-color: rgb(9, 74, 172);
@@ -32,15 +37,12 @@ ul div a{
 
 
   .bg-img {
-    /* The image used */
     background-image: url("pic/ComputerScienceImage.jpg");
     z-index: -1;
-    height: 60vh;
-    /* Center and scale the image nicely */
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* Needed to position the navbar */
     position: relative;
   }
 
@@ -67,6 +69,18 @@ ul div a{
     margin: 10em 5em;
     border-radius: 20px;
 }
+.treehouse{
+    background-image: url("./pic/treehouse.jpg");
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc;
+    background-size: cover;
+}
+
+.secondary-img{
+    opacity: .5;
+    margin:auto;
+    display: block;
+}
 
 .float-img{
     float:left;
@@ -78,6 +92,27 @@ ul div a{
     float:left;
     width: 340px;
     height: 150px;
+}
+
+.cousera{
+    background-image: url("pic/cousera.jpg");
+    background-color: #404040;
+    background-blend-mode: multiply;
+}
+
+input:focus,
+textarea:focus,
+.btn:hover,
+.btn:focus{
+    box-shadow: 3px 3px 5px grey;
+    color:black;
+    transform: scale(1.02);
+ 
+}
+
+.btn{
+    transition:color .3s;
+    transition:box-shadow 1.5s, color .3s;
 }
 
 .youtube{
